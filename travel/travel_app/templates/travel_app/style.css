@@ -1,0 +1,92 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('./back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1890px;
+
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+}
+
+.poly{
+    border-radius: 3.5rem;
+    margin: 40px;
+    width: 30%;
+    padding: 1.5rem;
+    background-color: rgba(red, green, blue, 0.4);
+    backdrop-filter: blur(0.7rem);
+}
+
+.buttons_plate{
+    padding: 20px;
+}
+
+a.buttonns {
+    padding: 3px 14px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
+    background:  rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.027451) #3ea12a rgba(255, 255, 255, 0.027451) rgba(255, 255, 255, 0.027451);
+    border-style: solid;
+    border-width: 1px 4px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
+    color: #555;
+    display:inline-block;
+    width:250px;
+    font-family: Open Sans, Sans-serif;
+    border-radius: 5px;
+    letter-spacing: 1px;
+     font-size: 17px;
+    text-shadow: rgb(0, 0, 0) 0px 1px 1px;
+    line-height: 30px;
+    position: relative;
+    margin:0 40px;
+    text-align: center;
+    text-decoration:none;
+  }
+  a.buttonns:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    border-width: 1px 7px 1px 1px;
+  }
+
+
+  [data-tooltip] {
+    position: relative; /* Относительное позиционирование */
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: left;
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+    border-radius: 0.5em;
+   }
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 3em; /* Положение подсказки */
+   }
+

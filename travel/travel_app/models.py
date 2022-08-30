@@ -6,12 +6,14 @@ class Category(models.Model):
     description = models.TextField()
 
 
+
 class Route(models.Model):
     name = models.CharField(max_length=255)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    categoryId = models.ForeignKey(Category, on_delete=models.CASCADE)
     places = models.ForeignKey("Place", on_delete=models.CASCADE)
     description = models.TextField()
     time = models.CharField(max_length=30)
+    image = models.ImageField()
 
 
 class Place(models.Model):
